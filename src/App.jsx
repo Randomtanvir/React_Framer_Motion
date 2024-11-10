@@ -1,15 +1,20 @@
-import KeyFrame from "./components/KeyFrame";
-import Simple from "./components/Simple";
-
-const App = () => {
+const ErrorPage = () => {
   return (
     <div>
-      <div>
+      <div className="flex justify-center flex-col items-center w-full ">
         {/* <Simple />; */}
-        <KeyFrame />
+        {/* <KeyFrame /> */}
+        {/* <ButtonTap /> */}
+        {/* <TextMotion /> */}
+        {/* <TransitionType /> */}
+        {/* <Variants /> */}
+        {/* <Counter /> */}
+        {/* <ScrollReveal /> */}
+        {/* <Stagger /> */}
+        hello
       </div>
     </div>
   );
 };
 
-export default App;
+export default ErrorPage;
