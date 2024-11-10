@@ -3,20 +3,37 @@ import { Link, Outlet } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div>
-        <ul className="flex flex-col text-2xl">
-          <Link to="/simple">simple</Link>
-          <Link to="/keyframe">keyframe</Link>
-          <Link to="/button-tap">button-tap</Link>
-          <Link to="/text-motion">text-motion</Link>
-          <Link to="/transition">transition</Link>
-          <Link to="/counter">counter</Link>
-          <Link to="/ScrollReveal">scroll</Link>
-          <Link to="/variants">variants</Link>
-          <Link to="/stagger">stagger</Link>
+      <div className="m-4">
+        <ul className="bg-gray-100 p-2 rounded">
+          <li className="text-2xl flex flex-col">
+            <Link className="mx-2 my-2 underline" to="/simple">
+              Simple Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/keyframe">
+              Keyframe Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/button-tap">
+              Button Tap Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/text-motion">
+              Text Motion Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/transition">
+              Transition Type Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/counter">
+              Counter Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/scroll">
+              Scroll Reveal Animation
+            </Link>
+            <Link className="mx-2 my-2 underline" to="/variants">
+              Variants
+            </Link>
+          </li>
         </ul>
       </div>
-      <div>
+      <div className="flex justify-center items-center ">
         <Outlet />
       </div>
     </div>
