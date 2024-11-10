@@ -10,6 +10,13 @@ const ButtonTap = () => {
           scale: 0.8,
           transition: { yoto: Infinity },
         }}
+        exit={{
+          y: "-100vw",
+          transition: {
+            ease: "easeInOut",
+            duration: 1,
+          },
+        }}
       >
         Click me
       </motion.button>

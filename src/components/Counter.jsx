@@ -7,11 +7,22 @@ const Counter = () => {
 
   useEffect(() => {
     const animation = animate(count, 100, { duration: 3 });
-
     return animation.stop;
   }, [count]);
 
-  return <motion.div>{roundedValue}</motion.div>;
+  return (
+    <motion.div
+      exit={{
+        x: "-100vw",
+        transition: {
+          ease: "easeInOut",
+          duration: 1,
+        },
+      }}
+    >
+      {roundedValue}
+    </motion.div>
+  );
 };
 
 export default Counter;

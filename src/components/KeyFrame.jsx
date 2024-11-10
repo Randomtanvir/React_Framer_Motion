@@ -10,6 +10,13 @@ const KeyFrame = () => {
         scale: [1, 1, 2, 1.5, 3, 1],
       }}
       transition={{ duration: 5 }}
+      exit={{
+        x: "-100vw",
+        transition: {
+          ease: "easeInOut",
+          duration: 1,
+        },
+      }}
     />
   );
 };

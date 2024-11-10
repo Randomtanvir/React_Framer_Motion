@@ -24,7 +24,7 @@ const Home = () => {
             <Link className="mx-2 my-2 underline" to="/counter">
               Counter Animation
             </Link>
-            <Link className="mx-2 my-2 underline" to="/scroll">
+            <Link className="mx-2 my-2 underline" to="/ScrollReveal">
               Scroll Reveal Animation
             </Link>
             <Link className="mx-2 my-2 underline" to="/variants">

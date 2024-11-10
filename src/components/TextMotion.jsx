@@ -4,7 +4,19 @@ const TextMotion = () => {
     "we are enjoying framer motion. Thaks reactive accilator coures learn With sumit and atapash";
   const textArry = text.split(" ");
   return (
-    <div className="bg-teal-600 p-4">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.94 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      exit={{
+        x: "-100vw",
+        transition: {
+          ease: "easeInOut",
+          duration: 1,
+        },
+      }}
+      className="bg-teal-600 p-4"
+    >
       {textArry.map((word, i) => (
         <motion.span
           key={i}
@@ -19,7 +31,7 @@ const TextMotion = () => {
           {word + " "}
         </motion.span>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

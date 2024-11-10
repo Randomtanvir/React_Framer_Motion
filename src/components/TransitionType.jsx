@@ -8,6 +8,13 @@ const TransitionType = () => {
         initial={{ opacity: 0, x: "-100vh" }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2 }}
+        exit={{
+          x: "100vw",
+          transition: {
+            ease: "easeInOut",
+            duration: 1,
+          },
+        }}
       >
         <h1>Learning Animation</h1>
         <p>
@@ -20,6 +27,13 @@ const TransitionType = () => {
         initial={{ opacity: 0, x: "-100vh" }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ type: "spring", duration: 3 }}
+        exit={{
+          x: "-100vw",
+          transition: {
+            ease: "easeInOut",
+            duration: 1,
+          },
+        }}
       >
         <h1>Learning Animation</h1>
         <p>
@@ -32,6 +46,13 @@ const TransitionType = () => {
         initial={{ opacity: 0, x: "-100vh" }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ type: "spring", bounce: 0.8, duration: 2 }}
+        exit={{
+          y: "-100vw",
+          transition: {
+            ease: "easeInOut",
+            duration: 1,
+          },
+        }}
       >
         <h1>Learning Animation</h1>
         <p>

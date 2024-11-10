@@ -22,6 +22,13 @@ const Stagger = () => {
         whileTap={{
           scale: 0.97,
         }}
+        exit={{
+          x: "-100vw",
+          transition: {
+            ease: "easeInOut",
+            duration: 1,
+          },
+        }}
         onClick={() => setToggle(!toggle)}
         className="flex w-96 text-xl justify-between px-5 p-2 cursor-pointer bg-black text-white mt-5 rounded-md items-center "
       >

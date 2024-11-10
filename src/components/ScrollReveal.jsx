@@ -14,6 +14,13 @@ const Box = ({ text }) => {
         },
       }}
       viewport={{ once: false }}
+      exit={{
+        x: "-100vw",
+        transition: {
+          ease: "easeInOut",
+          duration: 1,
+        },
+      }}
     >
       {text}
     </motion.div>
